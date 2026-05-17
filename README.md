@@ -91,4 +91,8 @@ To deploy to Netlify:
 2. Connect repo on netlify.com
 3. Netlify auto-deploys on push
 
+the link to the deployed frontend is https://bespoke-tartufo-7f20d3.netlify.app
+
+# 
+
 
