@@ -28,7 +28,7 @@ jobs:
       run: docker save test-1:latest | gzip > test-1-image.tar.gz
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: docker-image
         path: test-1-image.tar.gz
