@@ -8,3 +8,7 @@ This repository follows a branching workflow built around `main`, `develop`, and
 - `develop` is the integration branch for the next release.
 - `feature/*` branches are used for new work and are merged into `develop`.
 
+## Merge conflict resolution
+
+See `merge-conflict-resolution.md` for step-by-step instructions on reproducing, resolving, and finalizing merge conflicts in this workflow.
+
