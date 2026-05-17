@@ -125,6 +125,47 @@ To deploy to Netlify:
 
 the link to the deployed frontend is https://bespoke-tartufo-7f20d3.netlify.app
 
-# 
+# End-to-End Deployment Cycle
+## Developer writes code
+Developer creates or updates application code.
+Possible failure: Syntax errors or wrong logic in code.
+
+## Code pushed to Git repository
+Code is pushed to GitHub/GitLab.
+Possible failure: Merge conflicts or pushing wrong branch.
+
+## CI/CD pipeline starts
+Tools like Jenkins or GitHub Actions automatically start build and deployment process.
+Possible failure: Pipeline configuration errors or permission issues.
+
+## Build stage
+Application is compiled and dependencies are installed.
+Possible failure: Missing dependencies or build failure.
+
+## Testing stage
+Automated tests are executed.
+Possible failure: Unit tests or integration tests fail.
+
+## Docker image creation
+Docker image is created using Dockerfile.
+Possible failure: Incorrect Dockerfile commands or missing files.
+
+## Push image to registry
+Docker image is uploaded to Docker Hub or registry.
+Possible failure: Authentication error or network issue.
+
+## Deployment to server/container platform
+Application container is deployed to server or Kubernetes.
+Possible failure: Port conflicts, insufficient resources, or deployment configuration errors.
+
+## Application startup
+Application starts and becomes accessible to users.
+Possible failure: Application crash, database connection failure, or missing environment variables.
+
+## Monitoring and logging
+Logs and monitoring tools are used to check application health.
+Possible failure: Hidden runtime errors or service downtime not detected properly.
+
+
 
 
