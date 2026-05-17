@@ -8,6 +8,16 @@ This repository follows a branching workflow built around `main`, `develop`, and
 - `develop` is the integration branch for the next release.
 - `feature/*` branches are used for new work and are merged into `develop`.
 
+## Environment variables
+
+Copy `.env.example` to `.env` and set your own values:
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env` with your actual database password and other settings. Never commit `.env` to the repo.
+
 ## Merge conflict resolution
 
 conflict happens when two or more branch push changes at the same time 
@@ -44,3 +54,6 @@ with proper base images entrypoint
 
  two scripts are written for deployment and rollback 
 
+# Configuring ENvironment 
+
+`.env` file was created for confuguring the environment variable for the databse securely and gitignore to not pusgh that file 

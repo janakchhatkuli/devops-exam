@@ -8,13 +8,18 @@ services:
       - "8080:8080"
     depends_on:
       - db
+    env_file:
+      - .env
 
   db:
     image: postgres:latest
     container_name: test-db
+    env_file:
+      - .env
     environment:
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: testdb
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_DB: ${DATABASE_NAME}
+      POSTGRES_USER: ${DATABASE_USER}
     ports:
       - "5432:5432"
     volumes:
