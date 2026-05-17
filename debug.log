@@ -1,0 +1,22 @@
+[2024-01-15 14:22:10] ERROR: Port 8080 already in use
+[2024-01-15 14:22:11] ERROR: java.net.BindException: Address already in use: bind
+[2024-01-15 14:22:12] Container failed to start
+
+--- Container Restart Attempt ---
+
+[2024-01-15 14:22:13] Stopping old container
+[2024-01-15 14:22:14] Starting new container
+[2024-01-15 14:22:15] INFO - Application started
+[2024-01-15 14:22:16] INFO - Listening on port 8080
+[2024-01-15 14:22:20] INFO - Database connection initialized
+[2024-01-15 14:25:00] WARN - Memory usage at 90%
+[2024-01-15 14:25:05] ERROR: java.lang.OutOfMemoryError: Java heap space
+[2024-01-15 14:25:06] Container terminated
+
+--- Fix Applied ---
+
+[2024-01-15 14:25:10] Rebuilding with increased memory
+[2024-01-15 14:25:15] docker run -m 512m -p 8080:8080 test-1
+[2024-01-15 14:25:20] INFO - Application started with 512MB heap
+[2024-01-15 14:25:25] INFO - Database connected
+[2024-01-15 14:30:00] INFO - Container running normally
