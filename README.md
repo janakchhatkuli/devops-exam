@@ -40,3 +40,7 @@ with proper base images entrypoint
 
  a build-test.yml file is created for the CI workflow using github actions 
 
+ # bash script
+
+ two scripts are written for deployment and rollback 
+
