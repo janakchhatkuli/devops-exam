@@ -10,5 +10,12 @@ This repository follows a branching workflow built around `main`, `develop`, and
 
 ## Merge conflict resolution
 
-See `merge-conflict-resolution.md` for step-by-step instructions on reproducing, resolving, and finalizing merge conflicts in this workflow.
+conflict happens when two or more branch push changes at the same time 
+to stop such conflict merge conflict is used 
+
+for creating a conglict :
+small changes is added to the develop branch in test.html
+then checkout to main where the conflict occurs 
+conflict is resolved using the editor then branch are merged.
+
 
