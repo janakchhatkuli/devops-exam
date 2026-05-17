@@ -31,3 +31,12 @@ with proper base images entrypoint
 
  `dcoker run -d test-1`
 
+ # docker compose 
+
+ created docker-compose.yml for managing multi-container setup 
+ app and database 
+
+ # CI pipeline using github actions 
+
+ a build-test.yml file is created for the CI workflow using github actions 
+
