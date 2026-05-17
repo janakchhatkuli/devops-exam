@@ -57,3 +57,38 @@ with proper base images entrypoint
 # Configuring ENvironment 
 
 `.env` file was created for confuguring the environment variable for the databse securely and gitignore to not pusgh that file 
+
+## Nginx reverse proxy
+
+nginx is set up as a reverse proxy to handle incoming traffic on port 80 and forward it to the backend app on port 8080.
+
+`nginx.conf` contains the proxy configuration.
+
+docker-compose includes the nginx service:
+
+```bash
+docker-compose up
+```
+
+Now you can access the app at:
+
+```
+http://localhost
+```
+
+Instead of `http://localhost:8080`
+
+## Netlify deployment
+
+Frontend is hosted on Netlify. See `NETLIFY-DEPLOY.md` for deployment steps.
+
+`index.html` is the static frontend site.
+
+`netlify.toml` has the deployment configuration.
+
+To deploy to Netlify:
+1. Push code to GitHub
+2. Connect repo on netlify.com
+3. Netlify auto-deploys on push
+
+
