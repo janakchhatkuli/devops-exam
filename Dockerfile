@@ -1,20 +1,9 @@
-# Build stage
-FROM eclipse-temurin:11-jdk-alpine AS builder
-
-WORKDIR /build
-
-COPY test.java /build/
-
-RUN javac test.java && \
-    ls -la /build/
-
-# Runtime stage
-FROM eclipse-temurin:11-jre-alpine
+FROM eclipse-temurin:11-jdk
 
 WORKDIR /app
 
-COPY --from=builder /build/*.class /app/
+COPY . .
 
-EXPOSE 8080
+RUN javac Main.java
 
-CMD ["java", "test"]
+CMD ["java", "Main"]
