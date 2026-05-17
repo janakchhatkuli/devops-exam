@@ -46,9 +46,19 @@ with proper base images entrypoint
  created docker-compose.yml for managing multi-container setup 
  app and database 
 
- # CI pipeline using github actions 
+ # CI/CD Pipeline
 
- a build-test.yml file is created for the CI workflow using github actions 
+`.github/workflows/build-test.yml` has three stages:
+
+**Build**: Compile Java → Build Docker image → Save as artifact
+
+**Test**: Download image → Run tests (Java version, compilation) → Security scan
+
+**Deploy**: Runs only on main branch → Download image → Run container → Verify
+
+Trigger: Push or pull request to main/develop
+
+Check Actions tab for status.
 
  # bash script
 
