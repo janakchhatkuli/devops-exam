@@ -1,0 +1,18 @@
+[2024-01-15 08:00:01] INFO - Application started
+[2024-01-15 08:00:05] INFO - Connected to database
+[2024-01-15 08:05:12] WARN - Slow query detected: SELECT * FROM users took 2500ms
+[2024-01-15 08:10:22] ERROR - Connection timeout: Failed to connect to 192.168.1.100:5432
+[2024-01-15 08:10:23] ERROR - Database unavailable, retrying...
+[2024-01-15 08:10:24] ERROR - Max retries exceeded, stopping service
+[2024-01-15 08:15:30] INFO - Service restarted
+[2024-01-15 08:15:35] INFO - Database connection restored
+[2024-01-15 09:00:00] WARN - Memory usage at 85%
+[2024-01-15 09:05:10] ERROR - OutOfMemoryError: Java heap space
+[2024-01-15 09:05:11] ERROR - Application crashed
+[2024-01-15 09:05:12] INFO - Attempting automatic restart...
+[2024-01-15 09:05:15] INFO - Application recovered
+[2024-01-15 10:30:45] ERROR - Request failed: 502 Bad Gateway
+[2024-01-15 10:30:46] ERROR - Nginx unable to reach backend on 8080
+[2024-01-15 10:30:47] WARN - No healthy upstream servers
+[2024-01-15 10:35:00] INFO - Backend service recovered
+[2024-01-15 10:35:05] INFO - Nginx routing restored

@@ -78,6 +78,28 @@ http://localhost
 
 Instead of `http://localhost:8080`
 
+## Log Analysis
+
+Application logs and root cause analysis are in `LOG-ANALYSIS.md`.
+
+`app.log` contains sample application logs with various failures.
+
+`analyze-logs.sh` script analyzes logs and identifies issues:
+
+```bash
+chmod +x analyze-logs.sh
+./analyze-logs.sh
+```
+
+Common failures:
+- Database connection timeout
+- Out of memory errors
+- 502 Bad Gateway (backend down)
+- Slow database queries
+
+See `LOG-ANALYSIS.md` for detailed root cause analysis.
+
+
 ## Netlify deployment
 
 Frontend is hosted on Netlify. See `NETLIFY-DEPLOY.md` for deployment steps.
